@@ -8,7 +8,7 @@ interface PostCardProps {
 
 export default function PostCard({ post }: PostCardProps) {
   return (
-    <div className="relative overflow-hidden rounded-xl bg-white/70 backdrop-blur-lg shadow-lg border border-gray-100 transition-all hover:shadow-xl">
+    <div className="relative overflow-hidden rounded-xl bg-white/10 backdrop-blur-lg shadow-lg border border-gray-300 transition-all hover:shadow-2xl before:absolute before:inset-0 before:rounded-xl before:bg-[radial-gradient(circle_at_50%_50%,_rgba(99,102,241,0.08)_0%,_rgba(236,72,153,0.08)_50%,_rgba(249,115,22,0.08)_100%)] before:border-2 before:border-transparent before:content-['']">
       {/* Status badge */}
       <div
         className={`absolute top-0 right-0 px-3 py-1 text-xs font-bold text-white rounded-bl-lg ${

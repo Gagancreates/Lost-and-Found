@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 pb-20">
+    <main className="min-h-screen bg-gradient-to-b from-pink-100/10 to-blue-100/50 pb-20">
       <Header activeFilter={activeFilter} onFilterChange={setActiveFilter} />
 
       <div className="container mx-auto px-4 pt-4">
