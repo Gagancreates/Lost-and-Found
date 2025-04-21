@@ -12,7 +12,7 @@ export default function PostCard({ post }: PostCardProps) {
       {/* Status badge */}
       <div
         className={`absolute top-0 right-0 px-3 py-1 text-xs font-bold text-white rounded-bl-lg ${
-          post.type === "lost" ? "bg-red-500" : "bg-green-500"
+          post.type === "lost" ? "bg-red-500" : "bg-green-500" 
         }`}
       >
         {post.type.toUpperCase()}

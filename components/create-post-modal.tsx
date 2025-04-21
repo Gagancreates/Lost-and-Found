@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { X } from "lucide-react"
+import { Wheat, X } from "lucide-react"
 import type { Post, PostType } from "@/types/post"
 import PostForm from "./post-form"
 
@@ -15,10 +15,10 @@ export default function CreatePostModal({ isOpen, onClose, onSubmit }: CreatePos
   const [step, setStep] = useState<"select" | "form">("select")
   const [selectedType, setSelectedType] = useState<PostType | null>(null)
 
-  const handleTypeSelect = (type: PostType) => {
-    setSelectedType(type)
-    setStep("form")
-  }
+    const handleTypeSelect = (type: PostType) => {
+      setSelectedType(type)
+      setStep("form")
+    }
 
   const handleClose = () => {
     onClose()
@@ -73,3 +73,14 @@ export default function CreatePostModal({ isOpen, onClose, onSubmit }: CreatePos
     </div>
   )
 }
+
+
+
+// 1. Create a new post
+// 2. Select the type of post
+// 3. Fill in the form
+// 4. Submit the form
+// 5. Close the modal
+// 6. Show a success message
+// 7. Show a error message
+  
